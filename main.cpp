@@ -21,7 +21,7 @@ void debug_display(RenderWindow * rw, Waz w, Obiekty ob, int lev )
     sf::RectangleShape rectangle( sf::Vector2f( 600, 596) ); // tworzymy prostok¹t
 
     rectangle.setPosition( 2, 2);
-    rectangle.setFillColor(sf::Color::Yellow);
+    rectangle.setFillColor(sf::Color::Green);
 
     rectangle.setOutlineColor( Color::White );
     rectangle.setOutlineThickness( 2 );
@@ -58,7 +58,7 @@ void debug_display(RenderWindow * rw, Waz w, Obiekty ob, int lev )
     waz.setFillColor(Color::White);
     waz.setPosition(ob.jedzenie.x * 6, ob.jedzenie.y * 6);
     rw->draw(waz);
-    waz.setFillColor(Color::Cyan);
+    waz.setFillColor(Color::Blue);
     for (int i = 0; i <= 2; i++)
     {
         waz.setPosition(ob.przeszkody[i].x * 6, ob.przeszkody[i].y * 6);

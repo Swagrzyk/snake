@@ -9,7 +9,8 @@ int* score_top10(int bw);
 
 void wynikix(int w)
 {
-	RenderWindow okno(VideoMode(800, 600, 32), "Najlepsze 10 wynikow");
+    RenderWindow okno(VideoMode(800, 600, 32), "Najlepsze 10 wynikow", sf::Style::Default, sf::ContextSettings(0, 0, 4));
+    okno.setVerticalSyncEnabled(true);
     sf::RectangleShape rectangle( sf::Vector2f( 780, 580) ); // tworzymy prostok¹t
     rectangle.setPosition( 10, 10);
     rectangle.setOutlineColor( Color::Black );
@@ -54,8 +55,6 @@ okno.draw(rectangle);
                 okno.close();
         }
         okno.display();
-
-
 
     }
 
